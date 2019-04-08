@@ -63,10 +63,21 @@ doing = [
 'hate do it so bad']
 
 Shoes.app :title => "Тренажер Дружбинский" do
-		background white..gray
-	   stack margin:10 do
-	   		   button "Жми"  do
-	    		 	append { para "\n\n#{object.sample} #{doing.sample}" }
-	   			end
-		end
+background white..gray
+
+	stack  do
+	   	button "1. Begin", margin: 5  do
+	   		stack  do	   		   
+	    		 	@slot = append { para "#{object.sample} #{doing.sample}", align: "center" } 
+	    		 	image "LRG.jpg", margin_left: 100, margin_top: 0
+
+	   		end
+	   	end
+	   		button "2. Clear", margin: 5  do
+	   			@slot.clear
+	   		end	   	
 	end
+
+
+end
+
