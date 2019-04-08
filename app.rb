@@ -19,7 +19,6 @@ object = [
 'People',
 'Tom Cruz',
 'They']
-
 doing = [
 'drive faster then you',
 'hope understand ',
@@ -60,8 +59,22 @@ doing = [
 'do it right',
 'need know',
 'would like eat',
-'hate do it so bad']
-
+'hate do it so bad',
+'great teacher',
+'sick',
+'create',
+'wild animal',
+'manager',
+'black star',
+'nice',
+'so famous',
+'bad boy',
+'strong man',
+'invincible',
+'woman',
+'student',
+'resident'
+]
 Shoes.app :title => "Тренажер Дружбинский" do
 background white..gray
 	flow do
@@ -76,4 +89,3 @@ background white..gray
 	   		end
 	end
 end
-
