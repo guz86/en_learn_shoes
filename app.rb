@@ -64,20 +64,16 @@ doing = [
 
 Shoes.app :title => "Тренажер Дружбинский" do
 background white..gray
-
-	stack  do
-	   	button "1. Begin", margin: 5  do
-	   		stack  do	   		   
-	    		 	@slot = append { para "#{object.sample} #{doing.sample}", align: "center" } 
-	    		 	image "LRG.jpg", margin_left: 100, margin_top: 0
-
-	   		end
-	   	end
-	   		button "2. Clear", margin: 5  do
+	flow do
+	   		button "1. Begin", margin: 4  do
+	   		stack do  		   
+	    		 	@slot = append { para "#{object.sample} #{doing.sample}", align: "center", margin_top: 10}
+	    		 	image "LRG.jpg", margin_left: 100, margin_top: 4
+	    		end
+	    	end
+	    	button "2. Clear", margin: 4, margin_left: 18  do
 	   			@slot.clear
-	   		end	   	
+	   		end
 	end
-
-
 end
 
