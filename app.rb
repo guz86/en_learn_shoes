@@ -18,6 +18,18 @@ object = [
 'She',
 'People',
 'Tom Cruz',
+'My dog',
+'Doctor',
+'Your father',
+'Teacher',
+'Mouse',
+'This coffee',
+'Sergey',
+'His closes',
+'Bus',
+'They',
+'Girl',
+'Manager',
 'They']
 doing = [
 'drive faster then you',
